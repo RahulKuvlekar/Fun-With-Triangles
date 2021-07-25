@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Otomanopee+One&family=Pacifico&display=swap');
-/* font-family: 'Otomanopee One', sans-serif;
-font-family: 'Pacifico', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Fugaz+One&family=Kanit:wght@500&family=Rubik:wght@600;900&display=swap');
 :root {
   --primary-color: #fff0f3;
   --secondary-color: #ffb3c1;
   --text-color: #ffffff;
-  --nav-color: #590d22;
+  --nav-color: #1b263b;
   --alert-color: #d62828;
 }
 
@@ -15,19 +13,20 @@ font-family: 'Pacifico', cursive; */
   box-sizing: border-box;
 }
 body {
-  background-color:var(--primary-color);
+  font-family: 'Kanit', sans-serif;
+  color: var(--nav-color);
+  background: url("../ColorfulTriangles.jpg") no-repeat center center/cover;
 }
 
 .nav-brand {
   font-size: xx-large;
 }
 
-img{
-  width: 100%;
-  object-fit: cover;
+img {
+  width: 80%;
+  object-fit: contain;
 }
 
-footer,
 nav {
   text-align: center;
   width: 100%;
@@ -36,6 +35,12 @@ nav {
   /* background-color: var(--nav-color); */
 }
 
+main {
+  height: 90vh;
+}
+footer {
+  height: 10vh;
+}
 
 .footer-links li {
   display: inline-block;
@@ -47,23 +52,30 @@ nav {
   transition: color 0.4s ease;
 }
 .footer-links li a:hover {
-  color: var(--secondary-color);
+  color: #09121d;
 }
 input[type="number"],
 input[type="date"] {
   display: block;
-  margin: 0.5rem auto;
+  margin: auto;
   height: 2.5rem;
   width: 90%;
   max-width: 300px;
   padding: 0.5rem;
   font-size: x-large;
   color: var(--nav-color);
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   border: 1px solid var(--nav-color);
   border-radius: 5px;
+  text-align: center;
 }
-
+li{
+  text-decoration: none;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
 .container {
   width: 100%;
   padding: 1rem;
@@ -80,9 +92,16 @@ input[type="date"] {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
 }
-
-.card-pri {
-  box-shadow: 2px -3px 5px 18px rgba(243, 211, 145, 0.7);
+.card-glass {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+footer.card-glass {
+  border-radius: 10px 10px 0 0;
 }
 
 .box {
@@ -90,7 +109,8 @@ input[type="date"] {
   text-align: center;
 }
 
-button {
+button,
+.btn {
   margin: 0.5rem 0.5rem 0 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 8px;
@@ -147,6 +167,8 @@ button {
 .flex-box {
   display: flex;
   flex-flow: row;
+  align-items: center;
+  justify-content: center;
 }
 nav.flex-box {
   align-items: center;

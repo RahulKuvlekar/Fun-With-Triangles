@@ -1,0 +1,47 @@
+a.flex-box {
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.main-brand {
+  font-family: "Fugaz One", cursive;
+  font-size: 2.5rem;
+}
+.main-brand span {
+  font-family: "Akronim", cursive;
+  font-size: 3.5rem;
+  color: #590d22;
+}
+.main-links a {
+  color: #0d1b2a;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.7rem;
+  transition: color 0.3s ease-in;
+}
+.main-links a i {
+  transition: color 0.5s ease-in;
+}
+.main-links a:hover {
+  color: #415a77;
+}
+
+.main-links a:hover i {
+  color: #590d22;
+}
+/* #0d1b2a */
+
+@media all and (max-width: 768px) {
+  a.flex-box {
+    flex-flow: row;
+  }
+  .main-links a {
+    font-size: 1.3rem;
+  }
+  .main-brand {
+    font-family: "Fugaz One", cursive;
+    font-size: 2.3rem;
+  }
+  .main-brand span {
+    font-size: 2.6rem;
+    display: block;
+  }
+}
