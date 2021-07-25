@@ -6,38 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fun-With-Triangle</title>
     <link rel="stylesheet" href="./Assets/Style/component.css" />
-    <link rel="stylesheet" href="./Assets/Style/Style.css" />
+    <link rel="stylesheet" href="./Assets/Style/isTriangle.css" />
     <script
       src="https://kit.fontawesome.com/dd35a950d7.js"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="./Assets/Script/app.js" defer></script> -->
+    <script src="./Assets/Script/isTriangle.js" defer></script>
   </head>
   <body>
     <main class="flex-box">
-      <section class="fluid-container card-glass">
-        <h1 class="main-brand">Welcome to <span>' Fun with Triangles '</span></h1>
-        <ul class="main-links">
-          <li>
-            <a href="./isTriangle.html" class="flex-box"
-              ><i class="fas fa-hand-point-right fa-2x"></i>Angles of
-              Triangle?</a
-            >
-          </li>
-          <li>
-            <a href="./checkHypotenus.html" class="flex-box"
-              ><i class="fas fa-hand-point-right fa-2x"></i>Check hypotenuse</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://replit.com/@RAHULKUVLEKAR/Project-TriangleQuiz?embed=1&output=1#index.js"
-              target="_blank"
-              class="flex-box"
-              ><i class="fas fa-hand-point-right fa-2x"></i>Take a Quiz</a
-            >
-          </li>
-        </ul>
+      <section class="fluid-container card-glass flex-box">
+        <div class="flex-box">
+          <a class="btn btn-alternate" href="./index.html">Back</a>
+        </div>
+        <h1>
+          Enter the angles in below input boxes and we will tell you if those
+          angles make a Triangle
+        </h1>
+        <div class="container flex-box" id="input-section">
+          <input type="number" name="A" id="" placeholder=" Angle A " required/>
+          <input type="number" name="" id="" placeholder=" Angle B " required/>
+          <input type="number" name="" id="" placeholder=" Angle C " required />
+        </div>
+        <button type="submit" id="checkBtn" class="btn-alternate">
+          Lets Check
+        </button>
+        <section id="output-section" class="container card-glass notVisible">
+          <h1 id="output-msg">Msg</h1>
+        </section>
       </section>
     </main>
     <footer class="footer card-glass flex-box">

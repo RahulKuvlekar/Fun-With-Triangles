@@ -1,1 +1,0 @@
-const cl = console.log;
