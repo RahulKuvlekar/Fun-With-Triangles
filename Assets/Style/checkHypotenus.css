@@ -9,6 +9,10 @@ input[type="number"] {
     text-decoration: none;
   }
   
+  img{
+    width: 50%;
+  }
+
   section.flex-box {
     flex-flow: column;
     gap: 1rem;
@@ -22,6 +26,7 @@ input[type="number"] {
   
   #checkBtn {
     margin: auto;
+    padding: .8rem 1.5rem;
   }
   @media all and (max-width: 768px) {
       
