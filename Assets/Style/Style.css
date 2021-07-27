@@ -7,9 +7,10 @@ a.flex-box {
   font-size: 2.5rem;
 }
 .main-brand span {
-  font-family: "Akronim", cursive;
-  font-size: 3.5rem;
-  color: #590d22;
+  /* font-family: 'Bungee Inline', cursive; */
+  font-family: 'Rye', cursive;
+  font-size: 2.5rem;
+  color: #a32045;
 }
 .main-links a {
   color: #0d1b2a;
@@ -41,7 +42,7 @@ a.flex-box {
     font-size: 2.3rem;
   }
   .main-brand span {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     display: block;
   }
 }

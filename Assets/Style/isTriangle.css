@@ -22,11 +22,11 @@ section.flex-box {
 
 #checkBtn {
   margin: auto;
+  padding: 0.8rem 1.5rem;
 }
 @media all and (max-width: 768px) {
-    
-    input[type="number"]{
-        width: 70%;
-        text-align: center;
-    }
+  input[type="number"] {
+    width: 70%;
+    text-align: center;
+  }
 }
